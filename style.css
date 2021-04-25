@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    background: #fafafa;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 0.25fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "nav main side-bar"
+      "nav footer footer"
+      "nav name name"
+      "social social call";
+}
+nav{
+    grid-area: nav;
+    margin:45px;
+    font-size: 50px;
+    font-weight: 100;
+    font-style: italic;
+    color: #ee5253;
+}
+nav img{
+    width:45px;
+}
+nav a{
+    color:#747d8c;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+nav button{
+    color: white;
+    background-color:  #ee5253;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    cursor: pointer;
+}
+main{
+    grid-area: main;
+    margin: 45px;
+    padding: 45px;
+    font-size: 60px;
+    font-weight: 200;
+    color: #2d3436;
+}
+#side-bar{
+    grid-area: side-bar;
+}
+#side-bar p{
+    margin: 50px;
+    padding: 20px;
+    color: #2d3436;
+}
+#side-bar hr{
+    width: 50px;
+    padding-left: 55px;
+}
+#footer{
+    grid-area: footer;
+}
+#footer img{
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+    padding: 12px;
+    margin: 50px;
+    border-radius: 20px;
+    width:100px;
+    height: 100px;
+    background-color: #fab1a0;
+    border-width: 50px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+#footer img:hover{
+    opacity: 1;
+}
+#name{
+    grid-area: name;
+}
+#name p{
+    float: left;
+    margin: 5px;
+    word-spacing: 171px;
+    text-indent: 85px;
+    text-shadow: 2px 2px 5px red;
+    font-size: 20px;
+}
+#social{
+    grid-area: social;
+    background: #2d3436;
+}
+#social img{
+    padding-left: 12px;
+    padding-top: 5px;
+}
+#call{
+    grid-area: call;
+    background: #2d3436;
+    color: white;
+    padding-top: 5px;
+}
+#call img{
+    vertical-align: middle;
+    font-family: 'Times New Roman', Times, serif;
+}
